@@ -12,3 +12,4 @@ requirements.txt
 *.docx
 check*
 __pycache__
+.gitignore
