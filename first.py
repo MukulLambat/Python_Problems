@@ -48,3 +48,13 @@ if (n%2) == 0:
 else:
     print("Number is Odd")
 # %%
+# Which number is grater between two numbers
+
+n1 = float(input("Enter first Number"))
+n2 = float(input("Enter second Number"))
+
+if n1 >= n2:
+    print(f"{n1} is greater than{n2}")
+else:
+    print(f"{n2} is greater than {n1}")
+# %%
