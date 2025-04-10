@@ -39,3 +39,12 @@ print('Sum of %d and %i is %d' %(a,b,c))
 a = 15>10
 print(a)
 # %%
+# Check Even or Odd
+
+n = int(input("Enter a number "))
+
+if (n%2) == 0:
+    print("Number is Even")
+else:
+    print("Number is Odd")
+# %%
