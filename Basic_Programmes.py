@@ -132,10 +132,19 @@ if (((year % 4 == 0) and (year % 100 != 0)) or ((year % 400 == 0))):
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
-# ASCII Value of a Character
+#%% ASCII Value of a Character
 # Write a program that takes a single character and displays its ASCII (or Unicode) value.
-# Guess the Number (Simple Game)
+# Program 16: ASCII Value of a Character
+char = input("Enter a single character: ")
+
+if len(char) == 1:
+    print("The ASCII value of", char, "is", ord(char))
+else:
+    print("Please enter exactly one character.")
+
+#%% Guess the Number (Simple Game)
 # Write a simple game where the user guesses a secret number (hardcode the secret number in your program).
+
 # Multiplication Table
 # Write a program that prints the multiplication table of a chosen number up to 10 terms.
 # Simple List Operations
