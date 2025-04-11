@@ -62,7 +62,6 @@ print(f"After swaping {num1} becomes {num2} and {num2} becomes {num1}")
 # Write a program that reverses a given string.
 s = 'mukul'
 print(s[::-1])
-
 #%% Check Palindrome (String)
 # Write a program to check if a given string is a palindrome (reads the same forwards and backwards).
 pal_string = input("Enter the string")
