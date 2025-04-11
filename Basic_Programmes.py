@@ -32,6 +32,9 @@ sum = 0
 for i in range(num+1):
     sum = sum + i
 print(f"Sum Of first {num} Natural Numbers is:", sum)
+# using Formula
+sum_for = num * (num + 1)/2
+print(f"Sum Of first {num} Natural Numbers is:", sum_for)
 
 #%% Factorial of a Number
 # Write a program that asks for a positive integer and computes its factorial.
