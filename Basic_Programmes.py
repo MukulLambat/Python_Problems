@@ -3,7 +3,6 @@
 # Write a program that simply prints "Hello, World!" to the screen.
 print("Hello, World!")
 
-
 #%% Basic Arithmetic
 # Write a program that stores two numbers in variables and prints the result of their addition, subtraction, multiplication, division, integer division, exponentiation, and modulo.
 num1 = float(input("Enter First Number:"))
