@@ -144,7 +144,12 @@ else:
 
 #%% Guess the Number (Simple Game)
 # Write a simple game where the user guesses a secret number (hardcode the secret number in your program).
-
+secret_number = 14
+num = int(input("Enter the number between 1 to 20 to win the guess game"))
+if secret_number == num:
+    print("You guessed the number correctly")
+else: 
+    print("You guessed the number incorrect, try again!")
 # Multiplication Table
 # Write a program that prints the multiplication table of a chosen number up to 10 terms.
 # Simple List Operations
