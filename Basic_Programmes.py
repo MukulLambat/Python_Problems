@@ -96,7 +96,16 @@ else:
     print(f"{num} is not a prime number")
 #%% Find the Largest Among Three Numbers
 # Write a program that takes three numbers and prints which one is the largest.
-# Sum of Digits of a Number
+num1 = float(input("Enter First Number:"))
+num2 = float(input('Enter Second Number:'))
+num3 = float(input("Enter Third Number:"))
+if (num1 >= num2 and num1 >=num3):
+    print(f"{num1} is greatest number")
+elif (num2 >= num1 and num2 >= num3):
+    print(f"{num2} is greatest number")
+else:
+    print(f"{num3} is greatest number")
+#%% Sum of Digits of a Number
 # Write a program that calculates the sum of all digits of a given number.
 # Check Leap Year
 # Write a program that checks if a given year is a leap year.
