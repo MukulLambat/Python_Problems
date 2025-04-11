@@ -45,12 +45,28 @@ for i in range(1, num+1):
 print(f"Factorial of a {num} is:", factorial)
 #%% Fibonacci Series
 # Write a program that generates and prints the Fibonacci sequence up to n terms (where n is input by the user).
-# Swap Two Variables
+
+
+#%% Swap Two Variables
 # Write a program that swaps the values of two variables without using a temporary variable.
-# Reverse a String
+num1 = float(input("Enter First Number:"))
+num2 = float(input('Enter Second Number:'))
+num3 , num4 = num2 , num1
+print(f"After swaping {num1} becomes {num3} and {num2} becomes {num4}")
+# using Temporary Variable
+temp = num1
+num1 = num2
+num2 = temp
+print(f"After swaping {num1} becomes {num2} and {num2} becomes {num1}")
+#%% Reverse a String
 # Write a program that reverses a given string.
-# Check Palindrome (String)
+s = 'mukul'
+print(s[::-1])
+
+#%% Check Palindrome (String)
 # Write a program to check if a given string is a palindrome (reads the same forwards and backwards).
+pal_string = input("Enter the string")
+
 # Armstrong Number
 # Write a program that checks if a given number is an Armstrong (Narcissistic) number.
 # Check Prime Number
