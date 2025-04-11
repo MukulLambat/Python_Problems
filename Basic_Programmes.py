@@ -107,6 +107,15 @@ else:
     print(f"{num3} is greatest number")
 #%% Sum of Digits of a Number
 # Write a program that calculates the sum of all digits of a given number.
+num1 = int(input("Enter First Number:"))
+num1_str = str(num1)
+sum = 0
+update_num = num1
+for i in range(len(num1_str)):
+    last_digit = update_num % 10
+    sum += last_digit
+    update_num = update_num // 10
+print(f"Sum of digits of {num1} is:",sum)
 # Check Leap Year
 # Write a program that checks if a given year is a leap year.
 # ASCII Value of a Character
