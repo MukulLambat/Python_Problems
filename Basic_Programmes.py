@@ -17,7 +17,10 @@ print(f"Modulo of {num1} and {num2} = ",num2 % num2)
 #%% Taking User Input
 # Write a program that asks for your name and age, then displays a greeting using the provided name and age.
 # Check Even or Odd
-# Write a program that takes an integer from the user and determines if it is even or odd.
+name = input("Enter you name: ")
+age = int(input("Enter you age: "))
+print(f"Hello, Greetings of Day {name}({age}) ")
+#%% Write a program that takes an integer from the user and determines if it is even or odd.
 # Sum of First N Natural Numbers
 # Write a program that reads a positive integer n and calculates the sum of the first n natural numbers.
 # Factorial of a Number
