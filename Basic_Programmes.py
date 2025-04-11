@@ -22,12 +22,18 @@ age = int(input("Enter you age: "))
 print(f"Hello, Greetings of Day {name}({age}) ")
 #%% Check Even or Odd
 # Write a program that takes an integer from the user and determines if it is even or odd.
-# Sum of First N Natural Numbers
 num = float(input("Enter the number: "))
 print(f"{num} is Even.") if (num % 2 == 0) else print(f"{num} is odd")
 
-#%% Write a program that reads a positive integer n and calculates the sum of the first n natural numbers.
-# Factorial of a Number
+#%% Sum of First N Natural Numbers
+# Write a program that reads a positive integer n and calculates the sum of the first n natural numbers.
+num = int(input("Enter the number: "))
+sum = 0
+for i in range(num+1):
+    sum = sum + i
+print(f"Sum Of first {num} Natural Numbers is:", sum)
+
+#%% Factorial of a Number
 # Write a program that asks for a positive integer and computes its factorial.
 # Fibonacci Series
 # Write a program that generates and prints the Fibonacci sequence up to n terms (where n is input by the user).
@@ -67,3 +73,5 @@ print(f"{num} is Even.") if (num % 2 == 0) else print(f"{num} is odd")
 # Write a simple Rock-Paper-Scissors game where the user plays against the computer (use random choice for the computer).
 # Finding the Longest Word in a Sentence
 # Write a program that takes a sentence from the user, splits it into words, and prints the longest word.
+
+# %%
