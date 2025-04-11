@@ -38,7 +38,12 @@ print(f"Sum Of first {num} Natural Numbers is:", sum_for)
 
 #%% Factorial of a Number
 # Write a program that asks for a positive integer and computes its factorial.
-# Fibonacci Series
+num = int(input("Enter the number: "))
+factorial = 1
+for i in range(1, num+1):
+    factorial = factorial * i
+print(f"Factorial of a {num} is:", factorial)
+#%% Fibonacci Series
 # Write a program that generates and prints the Fibonacci sequence up to n terms (where n is input by the user).
 # Swap Two Variables
 # Write a program that swaps the values of two variables without using a temporary variable.
