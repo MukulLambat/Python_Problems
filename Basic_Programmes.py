@@ -20,9 +20,13 @@ print(f"Modulo of {num1} and {num2} = ",num2 % num2)
 name = input("Enter you name: ")
 age = int(input("Enter you age: "))
 print(f"Hello, Greetings of Day {name}({age}) ")
-#%% Write a program that takes an integer from the user and determines if it is even or odd.
+#%% Check Even or Odd
+# Write a program that takes an integer from the user and determines if it is even or odd.
 # Sum of First N Natural Numbers
-# Write a program that reads a positive integer n and calculates the sum of the first n natural numbers.
+num = float(input("Enter the number: "))
+print(f"{num} is Even.") if (num % 2 == 0) else print(f"{num} is odd")
+
+#%% Write a program that reads a positive integer n and calculates the sum of the first n natural numbers.
 # Factorial of a Number
 # Write a program that asks for a positive integer and computes its factorial.
 # Fibonacci Series
