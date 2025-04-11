@@ -65,6 +65,8 @@ print(s[::-1])
 #%% Check Palindrome (String)
 # Write a program to check if a given string is a palindrome (reads the same forwards and backwards).
 pal_string = input("Enter the string")
+reverse_pal_string = pal_string[::-1]
+print(f"{pal_string} is palindrome") if (pal_string == reverse_pal_string) else (f"{pal_string} is not palindrome")
 
 # Armstrong Number
 # Write a program that checks if a given number is an Armstrong (Narcissistic) number.
