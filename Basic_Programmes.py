@@ -79,9 +79,22 @@ for i in arm_string:
     sum = sum + last_digit ** (len(arm_string))
     updated_arm_number = updated_arm_number // 10
 print("Number is Armstrong") if (arm_number == sum) else print("Not a armstrong")
-# Check Prime Number
+
+#%% Check Prime Number
 # Write a program that determines if a given number is prime.
-# Find the Largest Among Three Numbers
+num = int(input("Enter the number: "))
+if num == 0 or num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    for i in range(2, num):
+        if (num % i == 0):
+            print(f"{num} is not a prime number")
+            break
+    else:
+        print(f"{num} is a prime number") # Use of special case with else 
+else:    
+    print(f"{num} is not a prime number")
+#%% Find the Largest Among Three Numbers
 # Write a program that takes three numbers and prints which one is the largest.
 # Sum of Digits of a Number
 # Write a program that calculates the sum of all digits of a given number.
