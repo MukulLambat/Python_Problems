@@ -116,8 +116,22 @@ for i in range(len(num1_str)):
     sum += last_digit
     update_num = update_num // 10
 print(f"Sum of digits of {num1} is:",sum)
-# Check Leap Year
+
+#%% Check Leap Year
 # Write a program that checks if a given year is a leap year.
+year = int(input("Enter year to check for leap year:"))
+if ((year % 4 == 0) and (year % 100 != 0)):
+    print(f"{year} is a leap year")
+elif (year % 400 == 0):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+# Second way to check for leap year
+year = int(input("Enter year to check for leap year:"))
+if (((year % 4 == 0) and (year % 100 != 0)) or ((year % 400 == 0))):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
 # ASCII Value of a Character
 # Write a program that takes a single character and displays its ASCII (or Unicode) value.
 # Guess the Number (Simple Game)
