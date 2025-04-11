@@ -68,8 +68,17 @@ pal_string = input("Enter the string")
 reverse_pal_string = pal_string[::-1]
 print(f"{pal_string} is palindrome") if (pal_string == reverse_pal_string) else (f"{pal_string} is not palindrome")
 
-# Armstrong Number
+#%% Armstrong Number
 # Write a program that checks if a given number is an Armstrong (Narcissistic) number.
+arm_number = int(input("Enter the number"))
+arm_string = str(arm_number)
+sum = 0
+updated_arm_number = arm_number
+for i in arm_string:
+    last_digit =  updated_arm_number % 10
+    sum = sum + last_digit ** (len(arm_string))
+    updated_arm_number = updated_arm_number // 10
+print("Number is Armstrong") if (arm_number == sum) else print("Not a armstrong")
 # Check Prime Number
 # Write a program that determines if a given number is prime.
 # Find the Largest Among Three Numbers
