@@ -13,6 +13,7 @@ print(f"Division of {num1} and {num2} = ",num2 / num2)
 print(f"Integer Division (Floor division) of {num1} and {num2} = ",num2 // num2) # Quotient without remainder
 print(f"Exponentiation of {num1} and {num2} = ",num2 ** num2)
 print(f"Modulo of {num1} and {num2} = ",num2 % num2)
+
 #%% Taking User Input
 # Write a program that asks for your name and age, then displays a greeting using the provided name and age.
 # Check Even or Odd
