@@ -174,7 +174,21 @@ for i in range(1, 11, 1):
     print(f"{num} * {i} = ",num * i)
 #%% Simple List Operations
 # Write a program that demonstrates basic operations on a list: creating, appending items, accessing elements, and removing items.
-# Read and Write to a File
+my_list = []
+
+# Adding items to the list
+my_list.append("Apple")
+my_list.append("Banana")
+my_list.append("Cherry")
+
+print("Current List:", my_list)
+print("First item:", my_list[0])
+
+# Remove item
+my_list.remove("Banana")
+print("List after removing 'Banana':", my_list)
+
+#%% Read and Write to a File
 # Write a program that writes some text to a file, then reads and prints that file’s content.
 # Dictionary Usage
 # Write a program that creates a dictionary with some initial key-value pairs, prints specific values by key, updates an existing value, and adds a new key-value pair.
