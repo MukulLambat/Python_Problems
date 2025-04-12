@@ -220,9 +220,35 @@ for i in s:
         pass
 print(f"The number of vowels present in {s}:",num_vowels)
     
-# Rock, Paper, Scissors
+#%% Rock, Paper, Scissors
 # Write a simple Rock-Paper-Scissors game where the user plays against the computer (use random choice for the computer).
-# Finding the Longest Word in a Sentence
+import random
+
+options = ["rock", "paper", "scissor"]
+user_choice = input("Choose rock, paper, or scissor: ").lower()
+computer_choice = random.choice(options)
+
+print("Computer chose:", computer_choice)
+
+if (computer_choice == 'rock' and user_choice == 'rock') or \
+    (computer_choice == 'paper' and user_choice == 'paper') or \
+    (computer_choice == 'scissor' and user_choice == 'scissor'):
+    
+    print("Game tie")
+
+elif(computer_choice == 'rock' and user_choice == 'paper') or \
+    (computer_choice == 'paper' and user_choice == 'scissor') or \
+    (computer_choice == 'scissor' and user_choice == 'rock'):
+    
+    print("You won the game")
+
+elif(computer_choice == 'rock' and user_choice == 'scissor') or \
+    (computer_choice == 'paper' and user_choice == 'rock') or \
+    (computer_choice == 'scissor' and user_choice == 'paper'):
+    
+    print("Computer won the game")
+else:
+    print("Choose the option correctly or check/write correct spelling")
+#%% Finding the Longest Word in a Sentence
 # Write a program that takes a sentence from the user, splits it into words, and prints the longest word.
 
-# %%
