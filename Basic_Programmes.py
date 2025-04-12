@@ -209,8 +209,17 @@ elif operation == "/":
     print (f"Division of {N1} and {N2}: ", N1 / N2)
 else:
     print("Select appropriate operator")
-# Counting Vowels in a String
+#%% Counting Vowels in a String
 # Write a program that counts and displays the number of vowels in a user-provided string.
+s = input("Enter the string to check for vowels").lower()
+num_vowels = 0
+for i in s:
+    if (i == "a" or i == "e" or i == "i" or i == "o" or i == "u"):
+        num_vowels = num_vowels + 1
+    else:
+        pass
+print(f"The number of vowels present in {s}:",num_vowels)
+    
 # Rock, Paper, Scissors
 # Write a simple Rock-Paper-Scissors game where the user plays against the computer (use random choice for the computer).
 # Finding the Longest Word in a Sentence
