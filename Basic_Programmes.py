@@ -45,7 +45,23 @@ for i in range(1, num+1):
 print(f"Factorial of a {num} is:", factorial)
 #%% Fibonacci Series
 # Write a program that generates and prints the Fibonacci sequence up to n terms (where n is input by the user).
-
+num = int(input("Enter the number: "))
+N1, N2 = 0, 1
+for i in range(num+1):
+    print(N1  , end = ",") # Here separator in print will not work because it only works with two arguments. 
+    nth = N1 + N2         # So with end there will be a comma at the end
+    N1 = N2               # To remove tha we can use list
+    N2 = nth
+# Second way to remove comma in the series
+num = int(input("Enter the number: "))
+N1, N2 = 0, 1
+fibonacci_series = list()
+for i in range(num+1):
+    fibonacci_series.append(str(N1))
+    Nth = N1 + N2
+    N1 = N2
+    N2 = N1 + Nth
+print(",".join(fibonacci_series))
 
 #%% Swap Two Variables
 # Write a program that swaps the values of two variables without using a temporary variable.
@@ -150,8 +166,9 @@ if secret_number == num:
     print("You guessed the number correctly")
 else: 
     print("You guessed the number incorrect, try again!")
-# Multiplication Table
+#%% Multiplication Table
 # Write a program that prints the multiplication table of a chosen number up to 10 terms.
+
 # Simple List Operations
 # Write a program that demonstrates basic operations on a list: creating, appending items, accessing elements, and removing items.
 # Read and Write to a File
