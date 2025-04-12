@@ -168,8 +168,11 @@ else:
     print("You guessed the number incorrect, try again!")
 #%% Multiplication Table
 # Write a program that prints the multiplication table of a chosen number up to 10 terms.
-
-# Simple List Operations
+num = int(input("Enter number to write table"))
+print(f"Multiplication Table of {num}:")
+for i in range(1, 11, 1):
+    print(f"{num} * {i} = ",num * i)
+#%% Simple List Operations
 # Write a program that demonstrates basic operations on a list: creating, appending items, accessing elements, and removing items.
 # Read and Write to a File
 # Write a program that writes some text to a file, then reads and prints that file’s content.
