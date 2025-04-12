@@ -192,8 +192,23 @@ print("List after removing 'Banana':", my_list)
 # Write a program that writes some text to a file, then reads and prints that file’s content.
 # Dictionary Usage
 # Write a program that creates a dictionary with some initial key-value pairs, prints specific values by key, updates an existing value, and adds a new key-value pair.
-# Simple Calculator (Using If-Else)
+
+
+
+#%% Simple Calculator (Using If-Else)
 # Write a program that takes two numbers and an operator (+, -, *, /) from the user, then performs the corresponding calculation.
+N1, N2 = map(float, input("Enter two numbers: ").split(' '))
+operation = input("Enter which operation you want to perform from (+, -, *, /)")
+if operation == "+":
+    print (f"Addition of {N1} and {N2}: ", N1 + N2)
+elif operation == "-":
+    print (f"Subtraction of {N1} and {N2}: ", N1 - N2)
+elif operation == "*":
+    print (f"Multiplication of {N1} and {N2}: ", N1 * N2)
+elif operation == "/":
+    print (f"Division of {N1} and {N2}: ", N1 / N2)
+else:
+    print("Select appropriate operator")
 # Counting Vowels in a String
 # Write a program that counts and displays the number of vowels in a user-provided string.
 # Rock, Paper, Scissors
