@@ -252,7 +252,7 @@ else:
 #%% Finding the Longest Word in a Sentence
 # Write a program that takes a sentence from the user, splits it into words, and prints the longest word.
 s = (input("Enter the string with spaces between the words").lower()).split()
-print(max(s, key = len))
+print(max(s, key = len)) #Here Key is used because we want to check the length and not alphabetically last
 # Second way
 s = (input("Enter the string with spaces between the words").lower()).split()
 longest_word = ""
