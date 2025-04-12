@@ -260,4 +260,3 @@ for word in s:
     if len(word) > len(longest_word):
         longest_word = word
 print(f"The longest word present in sentence is {longest_word.upper()} with the length of the word {len(longest_word)}")
-# %%
