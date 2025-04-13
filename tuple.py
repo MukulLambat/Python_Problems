@@ -120,7 +120,7 @@ print(colors)
 # 23. Sort a Tuple (Workaround)
 # Q: Sort the tuple t = (4, 1, 3, 2) in ascending order.
 t = (4, 1, 3, 2)
-t = tuple(set(t))
+t = tuple(sorted(t))
 print(t)
 # %%
 # 24. Swap Variables Using Tuple
