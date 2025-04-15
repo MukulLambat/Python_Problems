@@ -17,4 +17,8 @@ poem = print("Twinkle, twinkle, little star,\n\
 \t\tLike a diamond in the sky.\n\
 Twinkle, twinkle, little star,\n\
 \tHow I wonder what you are")
+# %% 2. Python Version Checker
+# Write a Python program to find out what version of Python you are using.
+import sys
+print(sys.version)
 # %%
