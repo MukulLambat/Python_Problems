@@ -252,3 +252,116 @@ vowel_check("B")
 # Test Data :
 # 3 -> [1, 5, 8, 3] : True
 # -1 -> [1, 5, 8, 3] : False
+test_data = [1, 2, 5, 8]
+num_check = int(input("Enter the Number to check"))
+for i in test_data:
+    if i == num_check: 
+        print("Entered number is present in the data")
+
+# %%26. List Histogram
+# Write a Python program to create a histogram from a given list of integers.
+
+#%% 27. List to String Concatenator
+# Write a Python program that concatenates all elements in a list into a string and returns it.
+test_data = [1, 2, 5, 8]
+list_con_string = ''
+for i in test_data:
+    if type(i) is not str:
+        i = str(i)
+        list_con_string += i
+    else:
+        list_con_string+=i
+# second method
+list_con_string = ''
+for i in test_data:
+    if not isinstance(i, str):
+        i = str(i)
+        list_con_string += i
+    else:
+        list_con_string+=i
+# Third way
+test_data = [1, 2, 5, 8]
+list_con_string = ''
+for i in test_data:
+    if type(i) != str:
+        i = str(i)
+        list_con_string += i
+    else:
+        list_con_string+=i
+# %% 28. Even Numbers Until 237
+
+# Write a Python program to print all even numbers from a given list of numbers in the same order and stop printing any after 237 in the sequence.
+# Sample numbers list :
+
+numbers = [    
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+    958,743, 527
+    ]
+even_list = []
+for i in numbers:
+    if i <= 237:
+        if i % 2 == 0:
+            even_list.append(i)
+print(even_list)
+
+# Second way
+numbers = [    
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+    958,743, 527
+    ]
+even_list1 = []
+for i in numbers:
+    if (i <= 237) and (i % 2 == 0):
+        even_list1.append(i)
+print(even_list)
+# %% 29. Unique Colors Finder
+# Write a Python program that prints out all colors from color_list_1 that are not present in color_list_2.
+# Test Data :
+# color_list_1 = set(["White", "Black", "Red"])
+# color_list_2 = set(["Red", "Green"])
+# Expected Output :
+# {'Black', 'White'}
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+color_list_3 = set.difference(color_list_2, color_list_1)
+# %% 30. Triangle Area Calculator
+# Write a Python program that will accept the base and height of a triangle and compute its area.
+num1 = float(input("Enter Base of traiangle:"))
+num2 = float(input("Enter Height of traiangle:"))
+area_triangle = (1/2) * (num1 * num2)
+print(f"Area of triangle is:{area_triangle}")
+# %% 31. GCD Calculator
+# Write a Python program that computes the greatest common divisor (GCD) of two positive integers.
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+
+if (num1 and num2) == 0:
+    print("GCD is undefined")
+
+elif num1 == 0 or num2 == 0:
+    if num1 == 0:
+        print(f"GCD between two number is {num2}")
+    else:
+        print(f"GCD between two number is {num1}")
+elif num1 == num2:
+    print(f"Both number are same so GCD is {num1}")
+else:
+    num1_factors = []
+    num2_factors = []
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            num1_factors.append(i)
+    for j in range(1, num2 + 1):
+        if num2 % j == 0:
+            num2_factors.append(j)
+common_factors = [x for x in num1_factors if x in num2_factors]
+print(f"GCD between two numbers is {max(common_factors)}")
+
+import math
+print(math.gcd(12,48))
+    
+# %%
