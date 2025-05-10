@@ -130,7 +130,7 @@ print(squares)
 # ✅ 18. List Comprehension – Even Numbers
 # Q: Use list comprehension to extract even numbers from numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-even_num = [i for i in numbers if ((i%2) == 0)]
+even_num = [i for i in numbers if ((i % 2) == 0)]
 print(even_num)
 # %%
 # ✅ 19. Join List into String
@@ -195,7 +195,7 @@ print(unique_list)
 # Q: Use list comprehension to get the square of all even numbers from 1 to 20.
 number_list = list(range(1,21))
 
-square_list = [i**2 for i in number_list if ( ( i%2 ) == 0 ) ]
+square_list = [i**2 for i in number_list if ( ( i % 2 ) == 0 ) ]
 print(square_list)
 # %%
 # 27. Extract Words with More Than 3 Letters
@@ -258,4 +258,25 @@ matrix = [
 ]
 transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 print(transpose)
+# %% Swapnil's Jio Interview
+
+# Write a Python function called product_except_self that 
+# takes a list of integers nums as input. This function should return a new list 
+# called output where each element output[i] is equal to the product of all the elements 
+# in the input list nums except for the element at index i (nums[i]).  
+
+# Input: - nums[int]: A list of integers.  
+# Output: - list[int]: A list where output[i] is the product of all elements in nums except nums[i]. 
+# Example: Input: [1, 2, 3, 4] Output: [24, 12, 8, 6]
+
+def product_except_self(list_int):
+
+    output_list = []
+ 
+    return output_list
+    
+
+input = [1, 2, 3, 4]
+output = product_except_self(input)
+
 # %%

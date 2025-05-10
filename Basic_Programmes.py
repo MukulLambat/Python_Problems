@@ -260,3 +260,9 @@ for word in s:
     if len(word) > len(longest_word):
         longest_word = word
 print(f"The longest word present in sentence is {longest_word.upper()} with the length of the word {len(longest_word)}")
+
+#%% Take input in single line
+a,b,c = input('Enter the number').split(' ')
+# %% Use map function to type cast
+a, b1, b2 = map(int, input("Enter three numbers: ").split())
+# %%
